@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { HeaderComp } from "../../components/HeaderComp";
-import { FooterComp } from "../../components/FooterComp";
+import { FooterComp } from "../../components/FooterComp/FooterComp";
+import { HeaderComp } from "../../components/HeaderComp/HeaderComp";
 
 export const RootLayout = () => {
     return (

@@ -1,1 +1,93 @@
-@import '../../../mainStyles.module.scss'
+@import "../../../mainStyles.module.scss";
+
+.errorPage {
+    width: 100vw;
+    height: 100svh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    .errorPageContent {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        align-items: center;
+        overflow: hidden;
+        max-width: 1110px;
+        width: 100%;
+        .textErrorPage {
+            width: 100%;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            background: $color_Peach;
+            padding: 48px;
+            align-items: center;
+            justify-content: center;
+            .title2 {
+                color: $color_White;
+                font-size: $size_48;
+                font-weight: $weight_500;
+            }
+            .title4 {
+                margin-top: 48px;
+                color: $color_White;
+                font-size: $size_40;
+                font-weight: $weight_400;
+                letter-spacing: $spacing_2;
+                text-align: center;
+            }
+            .description {
+                margin-top: 24px;
+                color: $color_LightGrey;
+                font-size: $size_16;
+                font-weight: $weight_400;
+                // width: 50%;
+                text-align: center;
+            }
+            .buttonHomePage {
+                margin-top: 48px;
+                padding: 16px 24px;
+                background: $color_White;
+                color: $color_darkGrey;
+                font-size: $size_16;
+                font-weight: $weight_500;
+                letter-spacing: $spacing_1;
+                text-transform: uppercase;
+                border-radius: 8px;
+                transition: 250ms;
+                &:hover {
+                    background-color: $color_LightPeach;
+                    color: $color_Peach;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .errorPage {
+        .errorPageContent {
+            gap: 40px;
+            .textErrorPage {
+                border-radius: 16px;
+                padding: 32px;
+                .title2 {
+                    font-size: $size_40;
+                }
+                .title4 {
+                    margin-top: 32px;
+                    font-size: $size_20;
+                }
+                .description {
+                    margin-top: 16px;
+                    font-size: $size_16;
+                }
+                .buttonHomePage {
+                    margin-top: 32px;
+                    }
+            }
+        }
+    }
+}

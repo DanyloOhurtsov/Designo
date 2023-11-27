@@ -1,10 +1,10 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { HomePage } from "./pages/HomePage";
+import { HomePage } from "./pages/HomePage/HomePage";
 import { RootLayout } from "./pages/BasicPages/RootLayout";
-import { OurCompanyPage } from "./pages/OurCompanyPage";
+import { OurCompanyPage } from "./pages/OurCompanyPage/OurCompanyPage";
 import { ErrorPage } from "./pages/BasicPages/ErrorPage/ErrorPage";
-import { LocationPage } from "./pages/LocationPage";
-import { ContactPage } from "./pages/ContactPage";
+import { LocationPage } from "./pages/LocationsPage/LocationPage";
+import { ContactPage } from "./pages/ContactPage/ContactPage";
 
 const router = createBrowserRouter([
     {

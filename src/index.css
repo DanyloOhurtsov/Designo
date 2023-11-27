@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Jost';
 }
-
+body.overflowSmall{
+    height: 100svh;
+    overflow: hidden;
+}
 a,
 button,
 input {

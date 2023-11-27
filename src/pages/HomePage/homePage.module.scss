@@ -1,0 +1,47 @@
+@import "../../mainStyles.module.scss";
+
+.homePage {
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: aqua;
+    .heroSectionHome {
+        width: 100%;
+        padding: 80px;
+        background-color: $color_Peach;
+        border-radius: 24px;
+        .textContentHero {
+            width: 50%;
+            height: 500px;
+            .title1 {
+                color: $color_White;
+                font-size: $size_48;
+                font-weight: $weight_500;
+            }
+            .subtitle {
+                margin-top: 8px;
+                color: $color_White;
+                font-size: $size_16;
+                font-weight: $weight_400;
+            }
+            .learnmoreBtn {
+                color: $color_darkGrey;
+                font-size: 15px;
+                font-weight: 500;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                padding: 16px 24px;
+                background-color: $color_White;
+                border-radius: 8px;
+                margin-top: 40px;
+                transition: 250ms;
+                width: fit-content;
+                display: block;
+                &:hover{
+                    background-color: $color_LightPeach;
+                    color: $color_Peach;
+                }
+            }
+        }
+    }
+}

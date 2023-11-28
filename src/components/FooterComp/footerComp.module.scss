@@ -1,1 +1,148 @@
-@import '../../mainStyles.module.scss'
+@import "../../mainStyles.module.scss";
+
+.footerComp {
+    margin-top: 80px;
+    width: 100%;
+    padding-top: 220px;
+    position: relative;
+    .topContentFooter {
+        position: absolute;
+        top: 0;
+        transform: translateX(-50%);
+        left: 50%;
+        max-width: 1110px;
+        width: 100%;
+        padding: 10px 80px;
+        background-color: $color_Peach;
+        height: 300px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 16px 16px 0 0;
+        .textContent {
+            width: 50%;
+            .title2 {
+                color: $color_White;
+                font-size: $size_40;
+                font-weight: $weight_500;
+            }
+            .subtitle {
+                color: $color_White;
+                font-size: $size_16;
+                font-weight: $weight_400;
+            }
+        }
+        .buttonLearnmoreFooter {
+            padding: 16px 24px;
+            background: $color_White;
+            border-radius: 8px;
+            display: block;
+            color: $color_darkGrey;
+            font-size: $size_16;
+            font-weight: $weight_500;
+            letter-spacing: $spacing_1;
+            text-transform: uppercase;
+            transition: 250ms;
+            width: fit-content;
+            &:hover {
+                color: $color_Peach;
+                background: $color_LightPeach;
+            }
+        }
+    }
+    .bottomFooter {
+        width: 100%;
+        background-color: $color_darkGrey;
+        padding: 140px 8px 64px;
+        padding-top: 140px;
+        .bottomContentFooter {
+            max-width: 1110px;
+            width: 100%;
+            margin: 0 auto;
+            .linksRow {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                align-items: center;
+                .linksNavigation {
+                    display: flex;
+                    align-items: center;
+                    gap: 40px;
+                    .linkToPage {
+                        color: $color_White;
+                        font-size: $size_14;
+                        font-weight: $weight_400;
+                        letter-spacing: $spacing_2;
+                        text-transform: uppercase;
+                        position: relative;
+                        transition: 250ms;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            width: 0%;
+                            left: 50%;
+                            bottom: -8px;
+                            transform: translateX(-50%);
+                            height: 1px;
+                            background: $color_Peach;
+                            transition: 250ms;
+                        }
+                        &:hover {
+                            color: $color_Peach;
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                        &.active {
+                            &::after {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .line{
+                width: 100%;
+                height: 1px;
+                background-color: $color_White;
+                opacity: 0.1;
+                margin: 40px 0;
+            }
+            .contactRow {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                .locationContent {
+                    display: flex;
+                    gap: 16rem;
+                    .itemLocation {
+                        .titleLocation {
+                            color: $color_White;
+                            font-size: $size_16;
+                            font-weight: $weight_700;
+                            margin-bottom: 8px;
+                        }
+                        .textLocation {
+                            color: $color_LightGrey;
+                            font-size: $size_16;
+                            font-weight: $weight_400;
+                        }
+                    }
+                }
+                .sociaContent{
+                    display: flex;
+                    align-items: center;
+                    gap: 16px;
+                    a{
+                        color: $color_White;
+                        font-size: $size_24;
+                        transition: 250ms;
+                        &:hover{
+                            color: $color_Peach;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

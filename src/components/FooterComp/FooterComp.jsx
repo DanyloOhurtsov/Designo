@@ -11,24 +11,27 @@ import { FaSquareInstagram } from "react-icons/fa6";
 export const FooterComp = () => {
     return (
         <div className={styles.footerComp}>
-            <div className={styles.topContentFooter}>
-                <div className={styles.textContent}>
-                    <h2 className={styles.title2}>
-                        Let’s talk about
-                        <br />
-                        your project
-                    </h2>
-                    <p className={styles.subtitle}>
-                        Ready to take it to the next level? Contact us today and
-                        find out how our expertise can help your business grow.
-                    </p>
+            <div className={styles.topFooter}>
+                <div className={styles.topContentFooter}>
+                    <div className={styles.textContent}>
+                        <h2 className={styles.title2}>
+                            Let’s talk about
+                            <br />
+                            your project
+                        </h2>
+                        <p className={styles.subtitle}>
+                            Ready to take it to the next level? Contact us today
+                            and find out how our expertise can help your
+                            business grow.
+                        </p>
+                    </div>
+                    <NavLink
+                        to={"contact"}
+                        className={styles.buttonLearnmoreFooter}
+                    >
+                        Learn More
+                    </NavLink>
                 </div>
-                <NavLink
-                    to={"contact"}
-                    className={styles.buttonLearnmoreFooter}
-                >
-                    Learn More
-                </NavLink>
             </div>
             <div className={styles.bottomFooter}>
                 <div className={styles.bottomContentFooter}>
@@ -36,6 +39,7 @@ export const FooterComp = () => {
                         <NavLink to={"/"}>
                             <img src={allLogos.lightLogo} alt="LightLogo" />
                         </NavLink>
+                        <div className={styles.lineAfterLogo}></div>
                         <nav className={styles.linksNavigation}>
                             <NavLink
                                 to={"/our-company"}

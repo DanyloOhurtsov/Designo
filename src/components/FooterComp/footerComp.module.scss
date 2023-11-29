@@ -5,48 +5,53 @@
     width: 100%;
     padding-top: 220px;
     position: relative;
-    .topContentFooter {
+    .topFooter {
+        width: 100%;
+        padding: 0 8px;
         position: absolute;
         top: 0;
         transform: translateX(-50%);
         left: 50%;
-        max-width: 1110px;
-        width: 100%;
-        padding: 10px 80px;
-        background-color: $color_Peach;
-        height: 300px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 16px 16px 0 0;
-        .textContent {
-            width: 50%;
-            .title2 {
-                color: $color_White;
-                font-size: $size_40;
-                font-weight: $weight_500;
+        .topContentFooter {
+            margin: 0 auto;
+            max-width: 1110px;
+            width: 100%;
+            padding: 10px 80px;
+            background-color: $color_Peach;
+            height: 300px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 16px;
+            .textContent {
+                width: 50%;
+                .title2 {
+                    color: $color_White;
+                    font-size: $size_40;
+                    font-weight: $weight_500;
+                }
+                .subtitle {
+                    color: $color_White;
+                    font-size: $size_16;
+                    font-weight: $weight_400;
+                }
             }
-            .subtitle {
-                color: $color_White;
+            .buttonLearnmoreFooter {
+                padding: 16px 24px;
+                background: $color_White;
+                border-radius: 8px;
+                display: block;
+                color: $color_darkGrey;
                 font-size: $size_16;
-                font-weight: $weight_400;
-            }
-        }
-        .buttonLearnmoreFooter {
-            padding: 16px 24px;
-            background: $color_White;
-            border-radius: 8px;
-            display: block;
-            color: $color_darkGrey;
-            font-size: $size_16;
-            font-weight: $weight_500;
-            letter-spacing: $spacing_1;
-            text-transform: uppercase;
-            transition: 250ms;
-            width: fit-content;
-            &:hover {
-                color: $color_Peach;
-                background: $color_LightPeach;
+                font-weight: $weight_500;
+                letter-spacing: $spacing_1;
+                text-transform: uppercase;
+                transition: 250ms;
+                width: fit-content;
+                &:hover {
+                    color: $color_Peach;
+                    background: $color_LightPeach;
+                }
             }
         }
     }
@@ -54,7 +59,6 @@
         width: 100%;
         background-color: $color_darkGrey;
         padding: 140px 8px 64px;
-        padding-top: 140px;
         .bottomContentFooter {
             max-width: 1110px;
             width: 100%;
@@ -64,6 +68,14 @@
                 justify-content: space-between;
                 width: 100%;
                 align-items: center;
+                .lineAfterLogo {
+                    width: 100%;
+                    height: 1px;
+                    background: $color_White;
+                    opacity: 0.1;
+                    margin: 32px 0 ;
+                    display: none;
+                }
                 .linksNavigation {
                     display: flex;
                     align-items: center;
@@ -101,7 +113,7 @@
                     }
                 }
             }
-            .line{
+            .line {
                 width: 100%;
                 height: 1px;
                 background-color: $color_White;
@@ -129,16 +141,95 @@
                         }
                     }
                 }
-                .sociaContent{
+                .sociaContent {
                     display: flex;
                     align-items: center;
                     gap: 16px;
-                    a{
+                    a {
                         color: $color_White;
                         font-size: $size_24;
                         transition: 250ms;
-                        &:hover{
+                        &:hover {
                             color: $color_Peach;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerComp {
+        padding-top: 264px;
+        .topFooter {
+            .topContentFooter {
+                padding: 32px 80px;
+                flex-direction: column;
+                height: 350px;
+                .textContent {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    text-align: center;
+                }
+            }
+        }
+        .bottomFooter {
+            padding: 180px 8px 64px;
+            .bottomContentFooter {
+                .contactRow {
+                    .locationContent {
+                        gap: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .footerComp {
+        .topFooter {
+            .topContentFooter {
+                gap: 32px;
+                min-height: 350px;
+                height: fit-content;
+                .textContent {
+                    width: 100%;
+                    .title2 {
+                        font-size: $size_32;
+                    }
+                }
+            }
+        }
+        .bottomFooter {
+            padding: 160px 8px 64px;
+            .bottomContentFooter {
+                .linksRow {
+                    flex-direction: column;
+                    .lineAfterLogo {
+                        display: block;
+                    }
+                    .linksNavigation {
+                        flex-direction: column;
+                        gap: 24px;
+                    }
+                }
+                .line {
+                    display: none;
+                }
+                .contactRow {
+                    margin-top: 40px;
+                    flex-direction: column;
+                    gap: 40px;
+                    align-items: center;
+                    .locationContent {
+                        flex-direction: column;
+                        gap: 48px;
+                        .itemLocation {
+                            text-align: center;
                         }
                     }
                 }

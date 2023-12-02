@@ -1,0 +1,38 @@
+@import "../../mainStyles.module.scss";
+
+.ourCompanyPage {
+    padding: 100px 16px;
+    .heroSection {
+        max-width: 1110px;
+        margin: auto;
+        display: flex;
+        background: $color_Peach;
+        height: 480px;
+        .textContentHero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 100px 48px;
+            gap: 32px;
+            width: 60%;
+            .title2 {
+                color: $color_White;
+                font-size: $size_48;
+                font-weight: $weight_500;
+            }
+            .subtitle {
+                color: $color_White;
+                font-size: $size_16;
+                font-weight: $weight_400;
+            }
+        }
+        .photoContentHero {
+            background-image: url("../../content/images/Bitmap.png");
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            height: 100%;
+            width: 40%;
+            background-color: aqua;
+        }
+    }
+}

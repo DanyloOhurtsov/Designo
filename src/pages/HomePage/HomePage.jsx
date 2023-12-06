@@ -21,6 +21,9 @@ export const HomePage = () => {
                         Learn more
                     </NavLink>
                 </div>
+                <div className={styles.imageContentHero}>
+                    <img src="" alt="" />
+                </div>
             </div>
             <div className={styles.linksSectionHome}></div>
             <div className={styles.iconsSectionsHome}></div>

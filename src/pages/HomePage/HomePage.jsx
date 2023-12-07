@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./homePage.module.scss";
 import { NavLink } from "react-router-dom";
+import { allImages } from "../../content/images/allImages";
 
 export const HomePage = () => {
+
     return (
         <div className={styles.homePage}>
             <div className={styles.heroSectionHome}>
@@ -22,7 +24,7 @@ export const HomePage = () => {
                     </NavLink>
                 </div>
                 <div className={styles.imageContentHero}>
-                    <img src="" alt="" />
+                    <img src={allImages.heroImage} alt="" />
                 </div>
             </div>
             <div className={styles.linksSectionHome}></div>

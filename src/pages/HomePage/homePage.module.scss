@@ -4,15 +4,21 @@
     max-width: 1110px;
     margin: 0 auto;
     margin-top: 80px;
-    background-color: aqua;
     .heroSectionHome {
+        *{
+            transition: 250ms;
+        }
         width: 100%;
-        padding: 80px;
         background-color: $color_Peach;
+        height: fit-content;
         border-radius: 24px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
         .textContentHero {
+            padding: 80px 0 80px 80px;
             width: 50%;
-            height: 500px;
+            height: fit-content;
             .title1 {
                 color: $color_White;
                 font-size: $size_48;
@@ -37,10 +43,44 @@
                 transition: 250ms;
                 width: fit-content;
                 display: block;
-                &:hover{
+                &:hover {
                     background-color: $color_LightPeach;
                     color: $color_Peach;
                 }
+            }
+        }
+        .imageContentHero {
+            margin-right: 10%;
+            display: flex;
+            align-items: flex-end;
+            filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.5));
+        }
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .homePage {
+        .heroSectionHome {
+            flex-direction: column;
+            align-items: center;
+            .textContentHero {
+                padding: 64px;
+                width: 100%;
+                height: fit-content;
+                .title1,
+                .subtitle,
+                .learnmoreBtn {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                }
+            }
+            .imageContentHero {
+                margin-right: 0;
+                height: 350px;
+                align-items: flex-start;
+                filter: drop-shadow(20px -40px 80px rgba(93, 2, 2, 0.5));
+                overflow: hidden;
             }
         }
     }

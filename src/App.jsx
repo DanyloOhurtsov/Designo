@@ -5,6 +5,7 @@ import { OurCompanyPage } from "./pages/OurCompanyPage/OurCompanyPage";
 import { ErrorPage } from "./pages/BasicPages/ErrorPage/ErrorPage";
 import { LocationPage } from "./pages/LocationsPage/LocationPage";
 import { ContactPage } from "./pages/ContactPage/ContactPage";
+import CatalogPage from "./pages/CatalogPage/CatalogPage";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: "contact",
                 element: <ContactPage />,
+            },
+            {
+                path: "catalog/:catalogname",
+                element: <CatalogPage />,
             },
         ],
     },

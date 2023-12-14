@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./homePage.module.scss";
 import { NavLink } from "react-router-dom";
 import { allImages } from "../../content/images/allImages";
+import { AiOutlineRight } from "react-icons/ai";
 
 export const HomePage = () => {
-
     return (
         <div className={styles.homePage}>
             <div className={styles.heroSectionHome}>
@@ -27,7 +27,44 @@ export const HomePage = () => {
                     <img src={allImages.heroImage} alt="" />
                 </div>
             </div>
-            <div className={styles.linksSectionHome}></div>
+            <div className={styles.linksSectionHome}>
+                <NavLink
+                    to={"/catalog/web-design"}
+                    className={styles.webDesign}
+                >
+                    <h2 className={styles.title2}>Web design</h2>
+                    <p className={styles.textLink}>
+                        VIEW PROJECTS{" "}
+                        <span>
+                            <AiOutlineRight />
+                        </span>
+                    </p>
+                </NavLink>
+                <NavLink
+                    to={"/catalog/app-design"}
+                    className={styles.appDesign}
+                >
+                    <h2 className={styles.title2}>App design</h2>
+                    <p className={styles.textLink}>
+                        VIEW PROJECTS{" "}
+                        <span>
+                            <AiOutlineRight />
+                        </span>
+                    </p>
+                </NavLink>
+                <NavLink
+                    to={"/catalog/graphic-design"}
+                    className={styles.graphicDesign}
+                >
+                    <h2 className={styles.title2}>Graphic design</h2>
+                    <p className={styles.textLink}>
+                        VIEW PROJECTS{" "}
+                        <span>
+                            <AiOutlineRight />
+                        </span>
+                    </p>
+                </NavLink>
+            </div>
             <div className={styles.iconsSectionsHome}></div>
         </div>
     );

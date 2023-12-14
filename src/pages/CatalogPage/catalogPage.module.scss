@@ -1,1 +1,78 @@
 @import "../../mainStyles.module.scss";
+
+.catalogPage {
+    max-width: calc(1110px + 32px);
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 0 16px;
+    .titleSection {
+        padding: 48px;
+        background-color: $color_Peach;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        border-radius: 24px;
+        .title1Catalog {
+            color: $color_White;
+            text-align: center;
+            font-size: $size_48;
+            font-weight: $weight_500;
+        }
+        .subtitleCatalog {
+            color: $color_White;
+            text-align: center;
+            font-size: $size_16;
+            font-weight: $weight_400;
+            max-width: 360px;
+        }
+    }
+    .cardsSections {
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        width: 100%;
+        .cardCatalog {
+            height: 478px;
+            display: flex;
+            flex-direction: column;
+            width: calc((100% - 48px) / 3);
+            border-radius: 24px;
+            overflow: hidden;
+            .imageCard {
+                height: 350px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    height: 100%;
+                }
+            }
+            .textCard {
+                padding: 24px;
+                height: 140px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+                background-color: $color_VeryLightPeach;
+                .title2Card {
+                    color: $color_Peach;
+                    text-align: center;
+                    font-size: $size_20;
+                    font-weight: $weight_500;
+                    letter-spacing: $spacing_5;
+                }
+                .subtitleCard {
+                    color: $color_darkGrey;
+                    text-align: center;
+                    font-size: $size_16;
+                    font-weight: $weight_400;
+                }
+            }
+        }
+    }
+}

@@ -1,13 +1,16 @@
 @import "../../mainStyles.module.scss";
 
 .ourCompanyPage {
-    padding: 100px 16px;
+    margin-top: 80px;
+    padding: 0 16px;
     .heroSection {
         max-width: 1110px;
         margin: auto;
         display: flex;
         background: $color_Peach;
         height: 480px;
+        border-radius: 24px;
+        overflow: hidden;
         .textContentHero {
             display: flex;
             flex-direction: column;

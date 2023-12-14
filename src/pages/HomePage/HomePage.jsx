@@ -29,36 +29,36 @@ export const HomePage = () => {
             </div>
             <div className={styles.linksSectionHome}>
                 <NavLink
-                    to={"/catalog/web-design"}
+                    to={"/catalog/webDesign"}
                     className={styles.webDesign}
                 >
                     <h2 className={styles.title2}>Web design</h2>
                     <p className={styles.textLink}>
-                        VIEW PROJECTS{" "}
+                        VIEW PROJECTS
                         <span>
                             <AiOutlineRight />
                         </span>
                     </p>
                 </NavLink>
                 <NavLink
-                    to={"/catalog/app-design"}
+                    to={"/catalog/appDesign"}
                     className={styles.appDesign}
                 >
                     <h2 className={styles.title2}>App design</h2>
                     <p className={styles.textLink}>
-                        VIEW PROJECTS{" "}
+                        VIEW PROJECTS
                         <span>
                             <AiOutlineRight />
                         </span>
                     </p>
                 </NavLink>
                 <NavLink
-                    to={"/catalog/graphic-design"}
+                    to={"/catalog/graphicDesign"}
                     className={styles.graphicDesign}
                 >
                     <h2 className={styles.title2}>Graphic design</h2>
                     <p className={styles.textLink}>
-                        VIEW PROJECTS{" "}
+                        VIEW PROJECTS
                         <span>
                             <AiOutlineRight />
                         </span>

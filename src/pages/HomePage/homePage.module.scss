@@ -1,9 +1,10 @@
 @import "../../mainStyles.module.scss";
 
 .homePage {
-    max-width: 1110px;
+    max-width: calc(1110px + 32px);
     margin: 0 auto;
     margin-top: 80px;
+    padding: 0 16px;
     .heroSectionHome {
         * {
             transition: 250ms;
@@ -141,11 +142,6 @@
             display: flex;
             flex-direction: column;
             gap: 24px;
-            transition: 250ms;
-            * {
-                transition: 250ms;
-            }
-
             .webDesign,
             .appDesign,
             .graphicDesign {
@@ -176,20 +172,46 @@
                     letter-spacing: $spacing_5;
                     text-transform: uppercase;
                     background: none;
-                    span {
-                        color: $color_Peach;
-                    }
                 }
             }
             .webDesign {
-                background-image: url("../../content/images/webDesign.png");
+                background-size: cover;
+                background-repeat: no-repeat;
             }
             .appDesign {
-                background-image: url("../../content/images/appDesign.png");
+                background-size: cover;
+                background-repeat: no-repeat;
             }
             .graphicDesign {
-                background-image: url("../../content/images/graphicDesign.png");
+                background-size: cover;
+                background-repeat: no-repeat;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .homePage {
+        margin: 0 auto;
+        margin-top: 0;
+        padding: 0;
+        .heroSectionHome {
+            border-radius: 0;
+            .textContentHero {
+                padding: 64px 24px;
+                width: 100%;
+                height: fit-content;
+                .title1 {
+                    margin-top: 0;
+                    font-size: $size_32;
+                }
+                .subtitle {
+                    margin-top: 8px;
+                }
+            }
+        }
+        .linksSectionHome {
+            padding: 0 16px;
         }
     }
 }

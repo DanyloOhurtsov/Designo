@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect } from "react";
 
 export const ContactPage = () => {
-  return (
-    <div>ContactPage</div>
-  )
-}
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    return <div>ContactPage</div>;
+};

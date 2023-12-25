@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./homePage.module.scss";
 import { NavLink } from "react-router-dom";
 import { allImages } from "../../content/images/allImages";
 import { AiOutlineRight } from "react-icons/ai";
 
 export const HomePage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.homePage}>
             <div className={styles.heroSectionHome}>

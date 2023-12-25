@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { contentTextLinks } from "../../content/text/contentText";
 import styles from "./catalogPage.module.scss";
 
 const CatalogPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const { catalogname } = useParams();
     const data = contentTextLinks[catalogname];
 

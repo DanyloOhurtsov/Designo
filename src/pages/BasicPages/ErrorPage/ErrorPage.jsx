@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./errorPage.module.scss";
 import { NavLink } from "react-router-dom";
 import { allLogos } from "../../../content/logos/allLogos";
 
 export const ErrorPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.errorPage}>
             <div className={styles.errorPageContent}>

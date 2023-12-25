@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./ourCompany.module.scss";
 
 export const OurCompanyPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.ourCompanyPage}>
             <div className={styles.heroSection}>

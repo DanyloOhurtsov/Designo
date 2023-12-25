@@ -112,6 +112,43 @@
             grid-area: 2 / 2 / 3 / 3;
         }
     }
+    .iconsSectionsHome {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 80px;
+        gap: 32px;
+        .itemIcons {
+            width: calc((100% - 64px) / 3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            .imageSection {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .textSection {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 32px;
+                .title4 {
+                    color: $color_Black;
+                    font-size: $size_20;
+                    font-weight: $weight_500;
+                    letter-spacing: $spacing_5;
+                }
+                .mainText {
+                    color: $color_darkGrey;
+                    font-size: $size_16;
+                    font-weight: $weight_400;
+                }
+            }
+        }
+    }
 }
 
 // TABLET
@@ -189,6 +226,24 @@
                 background-repeat: no-repeat;
             }
         }
+        .iconsSectionsHome {
+            flex-direction: column;
+            .itemIcons {
+                width: 100%;
+                align-items: flex-start;
+                flex-direction: row;
+                justify-content: space-between;
+                .imageSection {
+                    width: 202px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .textSection {
+                    max-width: 350px;
+                }
+            }
+        }
     }
 }
 
@@ -215,6 +270,19 @@
         }
         .linksSectionHome {
             padding: 0 16px;
+        }
+        .iconsSectionsHome {
+            padding: 0 16px;
+            .itemIcons {
+                gap: 24px;
+                flex-direction: column;
+                .imageSection {
+                    width: 100%;
+                }
+                .textSection {
+                    max-width: none;
+                }
+            }
         }
     }
 }

@@ -6,7 +6,6 @@ import styles from "./catalogPage.module.scss";
 const CatalogPage = () => {
     const { catalogname } = useParams();
     const data = contentTextLinks[catalogname];
-    console.log(data);
 
     return (
         <div className={styles.catalogPage}>

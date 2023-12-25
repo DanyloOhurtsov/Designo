@@ -1,5 +1,6 @@
 @import "../../mainStyles.module.scss";
 
+// DESKTOP
 .headerComp {
     width: 100%;
     padding: 0 8px;
@@ -86,6 +87,7 @@
     }
 }
 
+// TABLET | MOBILE
 @media screen and (max-width: 640px) {
     .headerComp {
         width: 100%;

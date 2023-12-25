@@ -3,6 +3,12 @@ import heroImage from "./heroPhoto.png";
 import home_Img1 from "../images/homePage/icon-Img1.png";
 import home_Img2 from "../images/homePage/icon-Img2.png";
 import home_Img3 from "../images/homePage/icon-Img3.png";
+// OUR COMPANY PAGE
+import bg_Img1 from "../images/ourCompanyPage/bg-ourCompany1.png";
+import bg_Img2 from "../images/ourCompanyPage/bg-ourCompany2.png";
+import our_img1 from "../images/ourCompanyPage/our-img1.svg";
+import our_img2 from "../images/ourCompanyPage/our-img2.svg";
+import our_img3 from "../images/ourCompanyPage/our-img3.svg";
 // CATALOG PAGE
 import web_Img1 from "../images/catalogImages/web-Img1.png";
 import web_Img2 from "../images/catalogImages/web-Img2.png";
@@ -21,6 +27,19 @@ import graphic_Img3 from "../images/catalogImages/graphic-Img3.png";
 
 // EXPORT
 export const allImages = {
+    homeImages: {
+        heroImage,
+        home_Img1,
+        home_Img2,
+        home_Img3,
+    },
+    ourCompanyImages: {
+        bg_Img1,
+        bg_Img2,
+        our_img1,
+        our_img2,
+        our_img3,
+    },
     catalogImages: {
         web_Img1,
         web_Img2,
@@ -36,11 +55,5 @@ export const allImages = {
         graphic_Img1,
         graphic_Img2,
         graphic_Img3,
-    },
-    homeImages: {
-        heroImage,
-        home_Img1,
-        home_Img2,
-        home_Img3,
     },
 };

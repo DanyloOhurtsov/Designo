@@ -5,7 +5,7 @@
 
 ## Status
 ### Pages
-- 🟢 HomePage
+- 🟡 HomePage
     - Styles
         - Desktop
         - Tablet

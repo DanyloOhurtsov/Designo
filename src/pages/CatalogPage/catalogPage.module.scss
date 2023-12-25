@@ -76,3 +76,33 @@
         }
     }
 }
+
+// TABLET 840 px
+@media screen and (max-width: 840px) {
+    .catalogPage {
+        .cardsSections {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 32px;
+            .cardCatalog {
+                width: 100%;
+                height: 310px;
+                flex-direction: row;
+                .imageCard {
+                    width: 50%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .textCard {
+                    width: 50%;
+                    height: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
+

@@ -25,6 +25,10 @@ import app_Img5 from "../images/catalogImages/app-Img5.png";
 import graphic_Img1 from "../images/catalogImages/graphic-Img1.png";
 import graphic_Img2 from "../images/catalogImages/graphic-Img2.png";
 import graphic_Img3 from "../images/catalogImages/graphic-Img3.png";
+// LOCATION PAGE
+import loc_img1 from "../images/locationPage/loc-img1.png";
+import loc_img2 from "../images/locationPage/loc-img2.png";
+import loc_img3 from "../images/locationPage/loc-img3.png";
 
 // EXPORT
 export const allImages = {
@@ -57,5 +61,10 @@ export const allImages = {
         graphic_Img1,
         graphic_Img2,
         graphic_Img3,
+    },
+    locationImages: {
+        loc_img1,
+        loc_img2,
+        loc_img3,
     },
 };

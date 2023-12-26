@@ -115,6 +115,44 @@
             }
         }
     }
+    .realdealSection {
+        width: 100%;
+        border-radius: 24px;
+        margin-top: 100px;
+        background-color: $color_VeryLightPeach;
+        display: flex;
+        overflow: hidden;
+        .textSection {
+            width: 60%;
+            padding: 100px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title2 {
+                color: $color_Peach;
+                font-size: $size_40;
+                font-weight: $weight_500;
+            }
+            .mainText {
+                margin-top: 24px;
+                color: $color_darkGrey;
+                font-size: $size_16;
+                font-weight: $weight_400;
+            }
+        }
+        .imageSection {
+            width: 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
 }
 
 // TABLET
@@ -135,73 +173,37 @@
             }
         }
         .talentSection {
-            width: 100%;
-            margin-top: 100px;
-            display: flex;
-            background-color: $color_VeryLightPeach;
+            flex-direction: column;
             .imageSection {
-                width: 40%;
-                overflow: hidden;
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                width: 100%;
+                height: 320px;
             }
             .textSection {
-                width: 60%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding: 16px 8%;
-                .title4 {
-                    color: $color_Peach;
-                    font-size: $size_40;
-                    font-weight: $weight_500;
-                }
-                .mainText {
-                    margin-top: 32px;
-                    color: $color_darkGrey;
-                    font-size: $size_16;
-                    font-weight: $weight_400;
-                }
+                width: 100%;
+                padding: 64px 48px;
+                text-align: center;
             }
         }
         .iconsSection {
-            margin-top: 100px;
-            display: flex;
-            justify-content: space-between;
-            gap: 24px;
+            align-items: center;
+            flex-direction: column;
             .iconItem {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: calc((100% - 64px) / 3);
-                .titleIcon {
-                    margin-top: 48px;
-                    color: $color_Black;
-                    text-align: center;
-                    font-size: $size_20;
-                    font-weight: $weight_500;
-                    letter-spacing: $spacing_5;
-                }
-                .linkToLocation {
-                    margin-top: 32px;
-                    color: $color_White;
-                    font-size: 15px;
-                    font-weight: 500;
-                    letter-spacing: 1px;
-                    text-transform: uppercase;
-                    padding: 16px 24px;
-                    background-color: $color_Peach;
-                    border-radius: 8px;
-                    transition: 250ms;
-                    &:hover {
-                        background-color: $color_LightPeach;
-                    }
-                }
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+        .realdealSection {
+            flex-direction: column-reverse;
+            .textSection {
+                width: 100%;
+                padding: 64px 48px;
+                text-align: center;
+            }
+            .imageSection {
+                align-items: flex-start;
+                height: 320px;
+                width: 100%;
             }
         }
     }
 }
-

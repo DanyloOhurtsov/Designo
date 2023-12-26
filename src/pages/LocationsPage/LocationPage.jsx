@@ -142,7 +142,7 @@ export const LocationPage = () => {
                         </div>
                     </div>
                     <div className={styles.imageSection}>
-                        <img src={location.image} alt="" />
+                        <img src={location.image} alt={location.locationName} />
                     </div>
                 </div>
             ))}

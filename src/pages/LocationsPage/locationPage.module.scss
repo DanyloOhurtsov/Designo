@@ -66,7 +66,7 @@
                             p {
                                 width: 16px;
                             }
-                            a:hover{
+                            a:hover {
                                 color: $color_Peach;
                             }
                         }
@@ -87,6 +87,30 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: 860px) {
+    .locationPage {
+        margin-top: 80px;
+        gap: 100px;
+        .itemLocation {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 32px;
+            &.reverse {
+                flex-direction: column-reverse;
+            }
+            .textSection {
+                width: 100%;
+                height: 320px;
+            }
+            .imageSection {
+                height: 320px;
+                width: 100%;
             }
         }
     }

@@ -6,6 +6,7 @@ import home_Img3 from "../images/homePage/icon-Img3.png";
 // OUR COMPANY PAGE
 import bg_Img1 from "../images/ourCompanyPage/bg-ourCompany1.png";
 import bg_Img2 from "../images/ourCompanyPage/bg-ourCompany2.png";
+import bg_Img3 from "../images/ourCompanyPage/bg-ourCompany3.png";
 import our_img1 from "../images/ourCompanyPage/our-img1.svg";
 import our_img2 from "../images/ourCompanyPage/our-img2.svg";
 import our_img3 from "../images/ourCompanyPage/our-img3.svg";
@@ -36,6 +37,7 @@ export const allImages = {
     ourCompanyImages: {
         bg_Img1,
         bg_Img2,
+        bg_Img3,
         our_img1,
         our_img2,
         our_img3,

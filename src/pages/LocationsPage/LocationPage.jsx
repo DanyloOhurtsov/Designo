@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from './locationPage.module.scss';
+import styles from "./locationPage.module.scss";
 import { allImages } from "../../content/images/allImages";
 
 export const LocationPage = () => {
@@ -99,11 +99,17 @@ export const LocationPage = () => {
 
     return (
         <div className={styles.locationPage}>
-            <h1>Location</h1>
             {dataLocation.map((location) => (
-                <div className={styles.itemLocation} key={location.id}>
+                <div
+                    className={`${styles.itemLocation} ${
+                        location.reverse ? styles.reverse : ""
+                    }`}
+                    key={location.id}
+                >
                     <div className={styles.textSection}>
-                        <h2 className={styles.title2}>{location.locationName}</h2>
+                        <h2 className={styles.title2}>
+                            {location.locationName}
+                        </h2>
                         <div className={styles.linksLocation}>
                             <div className={styles.item1Location}>
                                 <h3 className={styles.title3}>
@@ -120,9 +126,15 @@ export const LocationPage = () => {
                                 <div className={styles.textPhone}>
                                     {location.contacts.phone.text.map(
                                         (item) => (
-                                            <a href={item.href} key={item.id}>
-                                                {item.title} {item.link}
-                                            </a>
+                                            <div className={styles.linkText}>
+                                                <p>{item.title}</p>
+                                                <a
+                                                    href={item.href}
+                                                    key={item.id}
+                                                >
+                                                    {item.link}
+                                                </a>
+                                            </div>
                                         )
                                     )}
                                 </div>

@@ -95,7 +95,6 @@
 // TABLET
 @media screen and (max-width: 860px) {
     .locationPage {
-        margin-top: 80px;
         gap: 100px;
         .itemLocation {
             display: flex;
@@ -111,6 +110,40 @@
             .imageSection {
                 height: 320px;
                 width: 100%;
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 475px) {
+    .locationPage {
+        padding: 0;
+        margin-top: 0;
+        gap: 48px;
+        .itemLocation {
+            gap: 0;
+            .textSection {
+                border-radius: 0;
+                align-items: center;
+                .title2 {
+                    font-size: $size_32;
+                }
+                .linksLocation {
+                    width: 100%;
+                    align-items: center;
+                    flex-direction: column;
+                    gap: 32px;
+                    .item1Location,
+                    .item2Phone {
+                        text-align: center;
+                    }
+                }
+            }
+            .imageSection {
+                border-radius: 0;
+                height: 320px;
+                min-width: 0;
             }
         }
     }

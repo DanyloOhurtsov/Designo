@@ -94,6 +94,7 @@
                 margin-top: 48px;
                 color: $color_Black;
                 text-align: center;
+                text-transform: uppercase;
                 font-size: $size_20;
                 font-weight: $weight_500;
                 letter-spacing: $spacing_5;
@@ -203,6 +204,42 @@
                 align-items: flex-start;
                 height: 320px;
                 width: 100%;
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 475px) {
+    .ourCompanyPage {
+        padding: 0;
+        margin-top: 0;
+        .heroSection {
+            border-radius: 0;
+            .textContentHero {
+                padding: 64px 24px;
+                .title2 {
+                    font-size: $size_32;
+                }
+            }
+        }
+        .talentSection {
+            margin-top: 0;
+            border-radius: 0;
+            .textSection {
+                padding: 64px 24px;
+                .title4 {
+                    font-size: $size_32;
+                }
+            }
+        }
+        .realdealSection {
+            border-radius: 0;
+            .textSection {
+                padding: 64px 24px;
+                .title2 {
+                    font-size: $size_32;
+                }
             }
         }
     }

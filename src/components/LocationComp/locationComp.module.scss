@@ -1,0 +1,51 @@
+@import "../../mainStyles.module.scss";
+
+// DESKTOP
+.iconsSection {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    .iconItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc((100% - 64px) / 3);
+        .titleIcon {
+            margin-top: 48px;
+            color: $color_Black;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: $size_20;
+            font-weight: $weight_500;
+            letter-spacing: $spacing_5;
+        }
+        .linkToLocation {
+            margin-top: 32px;
+            color: $color_White;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 16px 24px;
+            background-color: $color_Peach;
+            border-radius: 8px;
+            transition: 250ms;
+            &:hover {
+                background-color: $color_LightPeach;
+            }
+        }
+    }
+}
+
+// TABLET and MOBILE
+@media screen and (max-width: 840px) {
+    .iconsSection {
+        align-items: center;
+        flex-direction: column;
+        .iconItem {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+}

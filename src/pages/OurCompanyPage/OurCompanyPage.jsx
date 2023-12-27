@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import styles from "./ourCompany.module.scss";
 import { allImages } from "../../content/images/allImages";
-import { NavLink } from "react-router-dom";
+import { LocationComp } from "../../components/LocationComp/LocationComp";
 
 export const OurCompanyPage = () => {
     useEffect(() => {
@@ -49,38 +49,7 @@ export const OurCompanyPage = () => {
                     </p>
                 </div>
             </div>
-            <div className={styles.iconsSection}>
-                <div className={styles.iconItem}>
-                    <img src={allImages.ourCompanyImages.our_img1} alt="" />
-                    <p className={styles.titleIcon}>Canada</p>
-                    <NavLink
-                        className={styles.linkToLocation}
-                        to={"/locations"}
-                    >
-                        See location
-                    </NavLink>
-                </div>
-                <div className={styles.iconItem}>
-                    <img src={allImages.ourCompanyImages.our_img2} alt="" />
-                    <p className={styles.titleIcon}>AUSTRALIA</p>
-                    <NavLink
-                        className={styles.linkToLocation}
-                        to={"/locations"}
-                    >
-                        See location
-                    </NavLink>
-                </div>
-                <div className={styles.iconItem}>
-                    <img src={allImages.ourCompanyImages.our_img3} alt="" />
-                    <p className={styles.titleIcon}>UNITED KINGDOM</p>
-                    <NavLink
-                        className={styles.linkToLocation}
-                        to={"/locations"}
-                    >
-                        See location
-                    </NavLink>
-                </div>
-            </div>
+            <LocationComp/>
             <div className={styles.realdealSection}>
                 <div className={styles.textSection}>
                     <h2 className={styles.title2}>The real deal</h2>

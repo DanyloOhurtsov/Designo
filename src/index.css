@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Jost';
+    font-family: "Jost";
 }
-body.overflowSmall{
+body.overflowSmall {
     height: 100svh;
     overflow: hidden;
 }
 a,
 button,
-input {
+input,
+textarea {
     background: inherit;
     border: inherit;
     outline: inherit;

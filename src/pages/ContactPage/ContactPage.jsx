@@ -1,12 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./contactPage.module.scss";
 
 import { LocationComp } from "../../components/LocationComp/LocationComp";
 
 export const ContactPage = () => {
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+    });
+    const [errorMessage, setErrorMessage] = useState("");
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData((prevState) => ({ ...prevState, [name]: value }));
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (
+            !formData.name ||
+            !formData.email ||
+            !formData.phone ||
+            !formData.message
+        ) {
+            setErrorMessage("");
+        } else {
+            setErrorMessage("");
+        }
+    };
+
     return (
         <div className={styles.contactPage}>
             <div className={styles.contactForm}>
@@ -20,32 +48,52 @@ export const ContactPage = () => {
                         line.
                     </p>
                 </div>
-                <form action="submit">
+                <form onSubmit={handleSubmit}>
                     <input
                         type="text"
-                        placeholder="Name"
-                        className={styles.inputForm}
+                        name="name"
+                        placeholder="Ім'я"
+                        className={`${
+                            formData.name ? styles.inputFormFilled : ""
+                        } ${styles.inputForm}`}
+                        value={formData.name}
+                        onChange={handleChange}
                     />
                     <input
                         type="email"
-                        placeholder="Email"
-                        className={styles.inputForm}
+                        name="email"
+                        placeholder="Електронна пошта"
+                        className={`${
+                            formData.name ? styles.inputFormFilled : ""
+                        } ${styles.inputForm}`}
+                        value={formData.email}
+                        onChange={handleChange}
                     />
                     <input
                         type="tel"
-                        placeholder="Phone"
-                        className={styles.inputForm}
+                        name="phone"
+                        placeholder="Телефон"
+                        className={`${
+                            formData.name ? styles.inputFormFilled : ""
+                        } ${styles.inputForm}`}
+                        value={formData.phone}
+                        onChange={handleChange}
                     />
                     <textarea
-                        placeholder="Your Message"
-                        className={styles.textArea}
+                        name="message"
+                        placeholder="Ваше повідомлення"
+                        className={`${
+                            formData.name ? styles.inputFormFilled : ""
+                        } ${styles.textArea}`}
+                        value={formData.message}
+                        onChange={handleChange}
                     ></textarea>
                     <button type="submit" className={styles.submitButton}>
-                        Submit
+                        Відправити
                     </button>
                 </form>
             </div>
-            <LocationComp/>
+            <LocationComp />
         </div>
     );
 };

@@ -82,11 +82,35 @@
         .contactForm {
             flex-direction: column;
             padding: 64px 48px;
+            gap: 48px;
             .textSection {
                 width: 100%;
             }
             form {
                 width: 100%;
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: 475px) {
+    .contactPage {
+        padding: 0;
+        .contactForm {
+            border-radius: 0;
+            .textSection {
+                text-align: center;
+                .title2 {
+                    font-size: $size_32;
+                }
+                .mainText {
+                    margin-top: 8px;
+                }
+            }
+            form {
+                width: 100%;
+                align-items: center;
             }
         }
     }

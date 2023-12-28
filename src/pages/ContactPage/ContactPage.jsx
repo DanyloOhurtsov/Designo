@@ -52,7 +52,7 @@ export const ContactPage = () => {
                     <input
                         type="text"
                         name="name"
-                        placeholder="Ім'я"
+                        placeholder="Name"
                         className={`${
                             formData.name ? styles.inputFormFilled : ""
                         } ${styles.inputForm}`}
@@ -62,7 +62,7 @@ export const ContactPage = () => {
                     <input
                         type="email"
                         name="email"
-                        placeholder="Електронна пошта"
+                        placeholder="Email Address"
                         className={`${
                             formData.name ? styles.inputFormFilled : ""
                         } ${styles.inputForm}`}
@@ -72,7 +72,7 @@ export const ContactPage = () => {
                     <input
                         type="tel"
                         name="phone"
-                        placeholder="Телефон"
+                        placeholder="Phone"
                         className={`${
                             formData.name ? styles.inputFormFilled : ""
                         } ${styles.inputForm}`}
@@ -81,7 +81,7 @@ export const ContactPage = () => {
                     />
                     <textarea
                         name="message"
-                        placeholder="Ваше повідомлення"
+                        placeholder="Your Message"
                         className={`${
                             formData.name ? styles.inputFormFilled : ""
                         } ${styles.textArea}`}
@@ -89,7 +89,7 @@ export const ContactPage = () => {
                         onChange={handleChange}
                     ></textarea>
                     <button type="submit" className={styles.submitButton}>
-                        Відправити
+                        Submit
                     </button>
                 </form>
             </div>
